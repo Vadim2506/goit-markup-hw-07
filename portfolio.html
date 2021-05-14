@@ -19,38 +19,41 @@
     <header class="header page-header">
       <div class="conteiner">
         <nav class="main-nav">
-          <a href="./index.html" class="logo"
-            ><span class="web">Web</span><span class="studio">Studio</span></a
+          <a href="./index.html" class="main-nav__logo"
+            ><span class="main-nav__logo--web">Web</span
+            ><span class="main-nav__logo--studio">Studio</span></a
           >
           <ul class="menu site-nav">
-            <li class="menu-item">
-              <a class="site-nav-title-text" href="./index.html">Студия</a>
+            <li class="menu__item">
+              <a class="menu__link" href="./index.html">Студия</a>
             </li>
-            <li class="menu-item">
-              <a class="site-nav-title-text" href="./portfolio.html"
-                ><span class="nav-studio">Портфолио</span></a
+            <li class="menu__item">
+              <a class="menu__link" href="./portfolio.html"
+                ><span class="menu__item--current">Портфолио</span></a
               >
             </li>
-            <li class="menu-item">
-              <a class="site-nav-title-text" href="">Контакты</a>
+            <li class="menu__item">
+              <a class="menu__link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="auth-nav">
-          <li class="nav">
+        <ul class="auth-nav auth-nav--modifier">
+          <li class="auth-nav__item">
             <a
-              class="auth-nav-title adress-link"
+              class="auth-nav__link auth-nav__link--modifier"
               href="mailto:info@devstudio.com"
             >
-              <svg class="mail-icon">
+              <svg class="auth-nav--mail-icon">
                 <use href="./images/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="nav tel">
-            <a class="auth-nav-title adress-link" href="tel:+380961111111"
-              ><svg class="tel-icon">
+          <li class="auth-nav__item auth-nav__item--modifier">
+            <a
+              class="auth-nav__link auth-nav__link--modifier"
+              href="tel:+380961111111"
+              ><svg class="auth-nav--tel-icon">
                 <use href="./images/sprite.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -60,25 +63,25 @@
       </div>
     </header>
     <main>
-      <h1 class="portfolio">Portfolio</h1>
+      <h1 class="hide">Portfolio</h1>
       <!-- фильтры -->
       <section class="section filter-buttons">
         <div class="conteiner">
-          <h2 class="portfolio">Filters</h2>
-          <ul class="menu site-nav">
-            <li class="menu-filter">
+          <h2 class="hide">Filters</h2>
+          <ul class="portfolio-btns site-nav">
+            <li class="filter-btn">
               <button type="button" class="button">Все</button>
             </li>
-            <li class="menu-filter">
+            <li class="filter-btn">
               <button type="button" class="button">Веб-сайты</button>
             </li>
-            <li class="menu-filter">
+            <li class="filter-btn">
               <button type="button" class="button">Приложения</button>
             </li>
-            <li class="menu-filter">
+            <li class="filter-btn">
               <button type="button" class="button">Дизайн</button>
             </li>
-            <li class="menu-filter">
+            <li class="filter-btn">
               <button type="button" class="button">Маркетинг</button>
             </li>
           </ul>
@@ -87,12 +90,12 @@
       <!-- портфолио  -->
       <section class="section-filter">
         <div class="conteiner">
-          <h2 class="portfolio">Portfolio</h2>
-          <ul class="card-set-makets team-work">
-            <li class="item work-item-portfolio">
+          <h2 class="hide">Portfolio</h2>
+          <ul class="makets team-work">
+            <li class="makets__item work-item-portfolio">
               <a href="">
-                <div class="work-item-img">
-                  <div class="item-detail">
+                <div class="makets__img">
+                  <div class="makets__details">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -106,15 +109,15 @@
                 </div>
 
                 <div class="text-inner">
-                  <h3 class="portfolio-title">Технокряк</h3>
-                  <p class="portfolio-text">Веб-сайт</p>
+                  <h3 class="text-inner__title">Технокряк</h3>
+                  <p class="text-inner__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="item work-item-portfolio">
+            <li class="makets__item work-item-portfolio">
               <a href="">
-                <div class="work-item-img">
-                  <div class="item-detail">
+                <div class="makets__img">
+                  <div class="makets__details">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -126,15 +129,17 @@
                   />
                 </div>
                 <div class="text-inner">
-                  <h3 class="portfolio-title">Постер</h3>
-                  <p class="portfolio-text">New Orlean vs Golden Star Дизайн</p>
+                  <h3 class="text-inner__title">Постер</h3>
+                  <p class="text-inner__text">
+                    New Orlean vs Golden Star Дизайн
+                  </p>
                 </div>
               </a>
             </li>
-            <li class="item work-item-portfolio">
+            <li class="makets__item work-item-portfolio">
               <a href="">
-                <div class="work-item-img">
-                  <div class="item-detail">
+                <div class="makets__img">
+                  <div class="makets__details">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -146,15 +151,15 @@
                   />
                 </div>
                 <div class="text-inner">
-                  <h3 class="portfolio-title">Ресторан</h3>
-                  <p class="portfolio-text">Seafood Приложение</p>
+                  <h3 class="text-inner__title">Ресторан</h3>
+                  <p class="text-inner__text">Seafood Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="item work-item-portfolio">
+            <li class="makets__item work-item-portfolio">
               <a href="">
-                <div class="work-item-img">
-                  <div class="item-detail">
+                <div class="makets__img">
+                  <div class="makets__details">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -166,15 +171,15 @@
                   />
                 </div>
                 <div class="text-inner">
-                  <h3 class="portfolio-title">Проект</h3>
-                  <p class="portfolio-text">Prime Маркетинг</p>
+                  <h3 class="text-inner__title">Проект</h3>
+                  <p class="text-inner__text">Prime Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="item work-item-portfolio">
+            <li class="makets__item work-item-portfolio">
               <a href=""
-                ><div class="work-item-img">
-                  <div class="item-detail">
+                ><div class="makets__img">
+                  <div class="makets__details">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -186,15 +191,15 @@
                   />
                 </div>
                 <div class="text-inner">
-                  <h3 class="portfolio-title">Проект</h3>
-                  <p class="portfolio-text">Boxes Приложение</p>
+                  <h3 class="text-inner__title">Проект</h3>
+                  <p class="text-inner__text">Boxes Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="item work-item-portfolio">
+            <li class="makets__item work-item-portfolio">
               <a href="">
-                <div class="work-item-img">
-                  <div class="item-detail">
+                <div class="makets__img">
+                  <div class="makets__details">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -206,15 +211,15 @@
                   />
                 </div>
                 <div class="text-inner">
-                  <h3 class="portfolio-title">Inspiration</h3>
-                  <p class="portfolio-text">Веб-сайт</p>
+                  <h3 class="text-inner__title">Inspiration</h3>
+                  <p class="text-inner__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="item work-item-portfolio">
+            <li class="makets__item work-item-portfolio">
               <a href=""
-                ><div class="work-item-img">
-                  <div class="item-detail">
+                ><div class="makets__img">
+                  <div class="makets__details">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -226,15 +231,15 @@
                   />
                 </div>
                 <div class="text-inner">
-                  <h3 class="portfolio-title">Издание</h3>
-                  <p class="portfolio-text">Limited Edition Дизайн</p>
+                  <h3 class="text-inner__title">Издание</h3>
+                  <p class="text-inner__text">Limited Edition Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="item work-item-portfolio">
+            <li class="makets__item work-item-portfolio">
               <a href=""
-                ><div class="work-item-img">
-                  <div class="item-detail">
+                ><div class="makets__img">
+                  <div class="makets__details">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -242,15 +247,15 @@
                   <img src="./images/img-7.jpg" alt="Проект LAB" width="370" />
                 </div>
                 <div class="text-inner">
-                  <h3 class="portfolio-title">Проект</h3>
-                  <p class="portfolio-text">LAB Маркетинг</p>
+                  <h3 class="text-inner__title">Проект</h3>
+                  <p class="text-inner__text">LAB Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="item work-item-portfolio">
+            <li class="makets__item work-item-portfolio">
               <a href=""
-                ><div class="work-item-img">
-                  <div class="item-detail">
+                ><div class="makets__img">
+                  <div class="makets__details">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
@@ -262,8 +267,8 @@
                   />
                 </div>
                 <div class="text-inner">
-                  <h3 class="portfolio-title">Growing</h3>
-                  <p class="portfolio-text">Business Приложение</p>
+                  <h3 class="text-inner__title">Growing</h3>
+                  <p class="text-inner__text">Business Приложение</p>
                 </div>
               </a>
             </li>
@@ -272,85 +277,127 @@
       </section>
     </main>
 
-    <!-- Футер -->
+    <!-- Подвал / footer -->
     <footer class="footer">
       <div class="conteiner footer-menu">
-        <address class="footer-adress">
-          <a href="./index.html" class="logo-foot"
-            ><span class="web">Web</span
-            ><span class="logo-footer">Studio</span></a
+        <address class="footer-menu__adress">
+          <a href="./index.html" class="footer-menu__logo"
+            ><span class="footer-menu__logo--web">Web</span
+            ><span class="footer-menu__logo--studio">Studio</span></a
           >
-          <div class="foot-adress">
-            <p class="adress">г. Киев, пр-т Леси Украинки, 26</p>
+          <div>
+            <p class="footer-menu__street">г. Киев, пр-т Леси Украинки, 26</p>
             <ul class="auth-nav-foot">
-              <li class="foot-mail">
+              <li class="auth-nav-foot__mail">
                 <a href="mailto:info@devstudio.com"
-                  ><span class="contact">info@devstudio.com</span></a
+                  ><span class="auth-nav-foot__contact"
+                    >info@devstudio.com</span
+                  ></a
                 >
               </li>
-              <li class="foot-tel">
+              <li class="auth-nav-foot__tel">
                 <a href="tel:+380961111111"
-                  ><span class="contact">+38 096 111 11 11</span></a
+                  ><span class="auth-nav-foot__contact"
+                    >+38 096 111 11 11</span
+                  ></a
                 >
               </li>
             </ul>
           </div>
         </address>
         <div class="footer-socials">
-          <p class="join-us">присоединяйтесь</p>
+          <p class="footer-socials__title">присоединяйтесь</p>
           <ul class="footer-icons">
-            <li class="footer-icons-item">
+            <li class="footer-icons__item">
               <a
                 href=""
-                class="footer-icon-link"
+                class="footer-icons__link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg class="footer-icon-svg">
+                <svg class="footer-icons__svg">
                   <use href="./images/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-icons-item">
+            <li class="footer-icons__item">
               <a
                 href=""
-                class="footer-icon-link"
+                class="footer-icons__link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg class="footer-icon-svg">
+                <svg class="footer-icons__svg">
                   <use href="./images/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-icons-item">
+            <li class="footer-icons__item">
               <a
                 href=""
-                class="footer-icon-link"
+                class="footer-icons__link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg class="footer-icon-svg">
+                <svg class="footer-icons__svg">
                   <use href="./images/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-icons-item">
+            <li class="footer-icons__item">
               <a
                 href=""
-                class="footer-icon-link"
+                class="footer-icons__link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg class="footer-icon-svg">
+                <svg class="footer-icons__svg">
                   <use href="./images/sprite.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
+        <div class="sign-up">
+          <h2 class="sign-up__text">Подпишитесь на рассылку</h2>
+          <form class="foot-form">
+            <label for="sign-up" class="foot-form__label visually-hidden">
+              Почта
+            </label>
+            <input
+              type="email"
+              name="sign-up"
+              class="foot-form__input"
+              id="sign-up"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="submit-btn button-cursor">
+              Подписаться
+              <span class="submit-btn__svg">
+                <svg class="submit-btn__svg--send-svg">
+                  <use href="./images/sprite.svg#icon-send"></use>
+                </svg>
+              </span>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
-    <script src="./js/modal.js"></script>
+    <script>
+      (() => {
+        const refs = {
+          openModalBtn: document.querySelector("[data-modal-open]"),
+          closeModalBtn: document.querySelector("[data-modal-close]"),
+          modal: document.querySelector("[data-modal]"),
+        };
+
+        refs.openModalBtn.addEventListener("click", toggleModal);
+        refs.closeModalBtn.addEventListener("click", toggleModal);
+
+        function toggleModal() {
+          refs.modal.classList.toggle("is-hidden");
+        }
+      })();
+    </script>
   </body>
 </html>
