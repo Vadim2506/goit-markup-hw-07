@@ -5,7 +5,10 @@
   --button-accent-text-color: #fff;
   --icon-color: #afb1b8;
   --footer-icon-bgc: rgba(255, 255, 255, 0.1);
+
+  --standard-animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 html {
   box-sizing: border-box;
 }
@@ -89,9 +92,7 @@ a {
   color: var(--title-text-color);
   letter-spacing: 0.02em;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--standard-animation);
 }
 .menu__link:hover,
 .menu__link:focus {
@@ -146,9 +147,7 @@ a {
   display: flex;
   align-items: center;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--standard-animation);
 }
 .auth-nav--mail-icon {
   width: 16px;
@@ -203,8 +202,7 @@ a {
 .feature__item {
   margin-left: 30px;
 
-  transition-property: opacity;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity var(--standard-animation);
 }
 .feature__item--modifier {
   width: 270px;
@@ -255,8 +253,7 @@ a {
 .work-cardset__item {
   margin-left: 30px;
 
-  transition-property: opacity;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity var(--standard-animation);
 }
 .work-cardset__item--modifier {
   position: relative;
@@ -304,8 +301,7 @@ a {
 .team-card-set__item {
   margin-left: 30px;
 
-  transition-property: opacity;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity var(--standard-animation);
 
   background-color: #fff;
   width: 270px;
@@ -348,9 +344,7 @@ a {
   height: 44px;
   border-radius: 50%;
 
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--standard-animation);
 }
 .social-icon__link:hover .social-icon__svg,
 .social-icon__link:focus .social-icon__svg {
@@ -365,9 +359,7 @@ a {
   height: 20px;
   fill: var(--icon-color);
 
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--standard-animation);
 }
 /* <!-- ---------- clients---------- --> */
 .clients {
@@ -410,9 +402,7 @@ a {
   height: 60px;
   fill: var(--icon-color);
 
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--standard-animation);
 }
 /* ------------------ Подвал / footer ------------------ */
 
@@ -496,9 +486,7 @@ a {
   border-radius: 50%;
   background-color: var(--footer-icon-bgc);
 
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--standard-animation);
 }
 .footer-icons__link:hover .footer-icons__svg,
 .footer-icons__link:focus .footer-icons__svg {
@@ -599,9 +587,7 @@ a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   padding: 0;
 
-  transition-property: color, background-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color, background-color, box-shadow var(--standard-animation);
 }
 .submit-btn__svg {
   margin-left: 10px;
@@ -742,9 +728,7 @@ a {
   position: absolute;
   top: 29px;
   left: 15px;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--standard-animation);
 }
 
 .form__label--comment-textarea {
@@ -890,8 +874,7 @@ a {
 .makets__item {
   margin-left: 30px;
 
-  transition-property: opacity;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity var(--standard-animation);
 }
 .makets__img {
   position: relative;
