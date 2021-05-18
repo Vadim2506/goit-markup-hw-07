@@ -14,10 +14,11 @@
   letter-spacing: 0.02em;
 
   transition: color var(--standard-animation);
-}
-.menu__link:hover,
-.menu__link:focus {
-  color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .menu__item--current::after {

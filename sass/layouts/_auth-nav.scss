@@ -8,10 +8,11 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-}
-.auth-nav--modifier:hover,
-.auth-nav--modifier:focus {
-  color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 .auth-nav__item {
   margin-right: auto;
@@ -24,10 +25,11 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-}
-.auth-nav__link:hover,
-.auth-nav__link:focus {
-  color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .auth-nav__link--modifier {
