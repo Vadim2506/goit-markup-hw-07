@@ -1,6 +1,6 @@
 .button {
   cursor: pointer;
-  font-family: Roboto;
+  font-family: var(--font-family--roboto);
   font-weight: 500;
   font-size: 16px;
   padding: 6px 22px;
@@ -28,7 +28,7 @@
 
   background-color: var(--accent-color);
   color: var(--button-accent-text-color);
-  font-family: Roboto;
+  font-family: var(--font-family--roboto);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;

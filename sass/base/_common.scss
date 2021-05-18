@@ -23,7 +23,7 @@ img {
 body {
   background-color: #fff;
   color: var(--primary-text-color);
-  font-family: Roboto;
+  font-family: var(--font-family--roboto);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
