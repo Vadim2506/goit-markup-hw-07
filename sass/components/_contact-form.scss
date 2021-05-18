@@ -78,15 +78,15 @@
   color: rgba(117, 117, 117, 0.5);
 }
 
-.agreement-label {
+.agreement__label {
   display: flex;
   justify-content: center;
   align-items: center;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
 
   color: var(--primary-text-color);
 }
@@ -99,6 +99,7 @@
 .agreement__label::before {
   content: "";
   display: inline-block;
+  text-align: center;
   width: 16px;
   height: 15px;
   border: 1px solid var(--title-text-color);
